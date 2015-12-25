@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/dark_blue" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="3.0">
+        <o.aqs android:textColor="@color/light_blue_text" android:id="@id/tweaks" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="Tweaks" android:="true" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:background="@color/white" android:padding="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <o.alt android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/twitter_login_button" android:background="@drawable/bg_button_blue_filled" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sign_in_with_twitter" android:layout_centerHorizontal="true" android:borderTop="false" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+            <o.alj android:textColor="@color/main_primary" android:id="@id/digits_button" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:text="@string/sign_in_with_digits" android:layout_below="@id/twitter_login_button" android:layout_centerHorizontal="true" style="@style/Button" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

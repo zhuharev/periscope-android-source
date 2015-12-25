@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="invited_num_followers">
+        <item quantity="other">%1$s a invitat %2$s persoane</item>
+        <item quantity="one">%1$s a invitat %2$s persoană</item>
+    </plurals>
+    <plurals name="invited_num_followers_embolden">
+        <item quantity="other">*%1$s* a invitat %2$s persoane</item>
+        <item quantity="one">*%1$s* a invitat %2$s persoană</item>
+    </plurals>
+    <plurals name="num_live_viewers">
+        <item quantity="other">%s spectatori în direct</item>
+        <item quantity="one">%s spectator în direct</item>
+    </plurals>
+    <plurals name="num_replay_viewers">
+        <item quantity="other">%s spectatori la reluare</item>
+        <item quantity="one">%s spectator la reluare</item>
+    </plurals>
+    <plurals name="recents">
+        <item quantity="other">%s recente</item>
+        <item quantity="one">%s recent</item>
+    </plurals>
+</resources>

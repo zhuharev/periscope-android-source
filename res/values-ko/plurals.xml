@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="invited_num_followers">
+        <item quantity="other">%1$s 님이 %2$s명을 초대했습니다</item>
+        <item quantity="one">%1$s 님이 %2$s명을 초대했습니다</item>
+    </plurals>
+    <plurals name="invited_num_followers_embolden">
+        <item quantity="other">*%1$s* 님이 %2$s명을 초대했습니다</item>
+        <item quantity="one">*%1$s* 님이 %2$s명을 초대했습니다</item>
+    </plurals>
+    <plurals name="num_live_viewers">
+        <item quantity="other">%s 생방송 시청자</item>
+        <item quantity="one">%s 생방송 시청자</item>
+    </plurals>
+    <plurals name="num_replay_viewers">
+        <item quantity="other">%s 다시보기 시청자</item>
+        <item quantity="one">%s 다시보기 시청자</item>
+    </plurals>
+    <plurals name="recents">
+        <item quantity="other">%s 최근</item>
+        <item quantity="one">%s 최근</item>
+    </plurals>
+</resources>

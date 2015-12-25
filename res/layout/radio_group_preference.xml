@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/standard_spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/choice_container" android:layout_width="72.0dip" android:layout_height="wrap_content" android:="@dimen/standard_spacing_16" android:="8.0dip" android:="true">
+        <o.arc android:layout_gravity="right" android:id="@id/choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="4.0dip" android:="4.0dip" android:tint="@color/bg_light_grey" />
+    </FrameLayout>
+    <o.arp android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="@id/choice_container" android:="true" style="@style/Preference.Title" />
+    <o.arp android:id="@id/summary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/title" android:="@id/choice_container" android:="true" style="@style/Preference.Summary" />
+</RelativeLayout>

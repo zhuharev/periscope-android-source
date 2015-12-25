@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/chat_avatar_size" android:="@dimen/activity_horizontal_margin">
+        <o.aqd android:id="@id/avatar" android:background="@drawable/bg_chat_avatar" android:layout_width="@dimen/chat_avatar_size" android:layout_height="fill_parent" android:scaleType="centerCrop" android:minHeight="@dimen/chat_avatar_size" />
+        <LinearLayout android:orientation="vertical" android:id="@id/chat_text_container" android:background="@drawable/bg_chat" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="@dimen/chat_avatar_size" android:="8.0dip" android:="10.0dip" android:="30.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/username_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <o.arp android:textSize="12.0sp" android:textColor="@color/light_grey" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-300.otf" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/block_count_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_block_small" android:="4.0dip" />
+                <o.arp android:textSize="12.0sp" android:textColor="@color/light_grey" android:id="@id/block_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_block_small" android:="2.0dip" android:font="fonts/MuseoSans-300.otf" />
+            </LinearLayout>
+            <o.arp android:textSize="14.0sp" android:textColor="@color/dark_grey" android:id="@id/chat_body" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_weight="1.0" android:font="fonts/MuseoSans-300.otf" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/reply_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:src="@drawable/ic_reply_indicator" android:="20.0dip" />
+    <ImageView android:id="@id/block_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/ic_block" android:="8.0dip" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/suggested_user_header" layout="@layout/suggested_user_header" />
+        <o.arm android:id="@id/list" android:background="@color/bg_users_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/footer_buttons" android:layout_below="@id/suggested_user_header" />
+        <RelativeLayout android:id="@id/footer_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <View android:id="@id/divider" android:background="@color/light_grey_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:background="@color/white" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+                <o.aqs android:textSize="14.0sp" android:textColor="@color/bg_blue" android:id="@id/skip" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onboarding_skip" android:layout_centerVertical="true" android:="@id/follow_count" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+                <o.aqs android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/follow_count" android:padding="@dimen/standard_spacing_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="24.0dip" android:="true" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/content_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/content_loading" />
+    <o.aqf android:id="@id/profile_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

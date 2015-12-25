@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_primary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.aqs android:textColor="@color/light_blue_text" android:layout_gravity="right" android:id="@id/skip" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="@string/skip" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="84.0dip">
+        <o.apv android:id="@id/dots" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_centerHorizontal="true" android:count="4" android:selectedPosition="0" />
+        <o.aqs android:textSize="14.0sp" android:id="@id/get_started" android:background="@drawable/bg_button_white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:minWidth="158.0dip" android:text="@string/get_started" android:layout_centerHorizontal="true" android:font="fonts/MuseoSans-300.otf" style="@style/Button" />
+    </RelativeLayout>
+</LinearLayout>

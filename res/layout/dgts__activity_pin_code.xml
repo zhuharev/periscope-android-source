@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:digits="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/dgts__Container">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+            <com.digits.sdk.android.AccentImageView android:id="@id/dgts__logo_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/dgts__logo" android:contentDescription="@string/dgts__digits_logo_desc" />
+            <com.digits.sdk.android.ColorPrimaryImageView android:id="@id/dgts__logo_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:src="@drawable/dgts__logo_name" android:contentDescription="@string/dgts__digits_logo_name_desc" android:="4.0dip" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__pin_code_verification_title" style="@style/dgts__Title" />
+        <EditText android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/dgts__confirmationEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dgts__margin_bottom" android:hint="@string/dgts__verification_code" android:inputType="numberPassword" android:imeOptions="actionNext" />
+        <com.digits.sdk.android.StateButton android:id="@id/dgts__createAccount" android:layout_width="fill_parent" android:layout_height="@dimen/tw__login_btn_height" android:layout_marginBottom="@dimen/dgts__margin_bottom" android:finishStateText="@string/dgts_verify" android:progressStateText="@string/dgts_verifying" android:startStateText="@string/dgts_verify" />
+        <TextView android:id="@id/dgts__termsTextCreateAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts_pin_code_terms" style="@style/dgts__Terms" />
+    </LinearLayout>
+</ScrollView>

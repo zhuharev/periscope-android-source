@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/large_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <o.arp android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Author" />
+    <o.arp android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" style="@style/Title" />
+    <View android:layout_marginTop="@dimen/large_margin" android:layout_marginBottom="@dimen/large_margin" style="@style/Divider" />
+    <o.arp android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Description" />
+    <o.aqs android:id="@id/positive" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:text="@string/view_broadcast" style="@style/Button.Hollow" />
+</LinearLayout>

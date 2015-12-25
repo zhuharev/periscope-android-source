@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.ash android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    <o.arp android:id="@id/attribution" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/attribution" android:font="fonts/MuseoSans-500.otf" style="@style/ProfileItem" />
+    <o.arp android:id="@id/tos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tos" android:font="fonts/MuseoSans-500.otf" style="@style/ProfileItem" />
+    <o.arp android:id="@id/pp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pp" android:font="fonts/MuseoSans-500.otf" style="@style/ProfileItem" />
+</LinearLayout>

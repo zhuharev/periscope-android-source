@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:digits="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tw__Permission_Container">
+        <com.digits.sdk.android.AccentImageView android:id="@id/dgts__header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/dgts__addressbook_header" android:scaleType="center" android:contentDescription="@string/dgts__find_your_friends" />
+        <TextView android:gravity="center" android:id="@id/dgts__find_your_friends" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__find_your_friends" style="@style/tw__Permission_Title" />
+        <TextView android:gravity="center" android:id="@id/dgts__upload_contacts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__upload_contacts" style="@style/tw__Permission_Description" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tw__ButtonBar">
+            <com.digits.sdk.android.InvertedAccentButton android:textSize="@dimen/tw__login_btn_text_size" android:id="@id/dgts__not_now" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/tw__btn_bar_margin_left" android:layout_marginRight="@dimen/tw__btn_bar_margin_right" android:text="@string/dgts__not_now" android:layout_weight="1.0" android:="@dimen/tw__btn_bar_margin_left" android:="@dimen/tw__btn_bar_margin_right" />
+            <com.digits.sdk.android.AccentButton android:textSize="@dimen/tw__login_btn_text_size" android:id="@id/dgts__okay" android:layout_width="0.0dip" android:layout_height="48.0dip" android:layout_marginLeft="@dimen/tw__btn_bar_margin_left" android:layout_marginRight="@dimen/tw__btn_bar_margin_right" android:text="@string/dgts__okay" android:layout_weight="1.0" android:="@dimen/tw__btn_bar_margin_left" android:="@dimen/tw__btn_bar_margin_right" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

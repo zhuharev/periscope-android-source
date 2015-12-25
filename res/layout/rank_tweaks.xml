@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Switch android:id="@id/enable_rank_summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:minHeight="?android:listPreferredItemHeight" android:text="Show rank scores summary" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="stickiness_coefficient" />
+        <EditText android:enabled="false" android:id="@id/stickiness_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="verified_coefficient" />
+        <EditText android:enabled="false" android:id="@id/verified_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="viewer_count_coefficient" />
+        <EditText android:enabled="false" android:id="@id/viewer_count_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="report_ratio_coefficient" />
+        <EditText android:enabled="false" android:id="@id/report_ratio_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="has_location_coefficient" />
+        <EditText android:enabled="false" android:id="@id/has_location_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="shares_coefficient" />
+        <EditText android:enabled="false" android:id="@id/shares_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="cortex_score_coefficient" />
+        <EditText android:enabled="false" android:id="@id/cortex_score_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="decay_coefficient" />
+        <EditText android:enabled="false" android:id="@id/decay_coefficient" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="160.0dip" android:layout_height="wrap_content" android:text="decay_half_life" />
+        <EditText android:enabled="false" android:id="@id/decay_half_life" android:layout_width="100.0dip" android:layout_height="wrap_content" android:inputType="numberDecimal" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/edit_parameters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Edit parameters" />
+    <TextView android:textColor="@android:color/bright_foreground_dark_inverse" android:id="@id/warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Warning: these are global broadcast rank parameters" />
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="raw_stickiness" />
+        <TextView android:enabled="false" android:id="@id/raw_stickiness_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/raw_stickiness_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="stickiness" />
+        <TextView android:enabled="false" android:id="@id/stickiness_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/stickiness_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="is_verified" />
+        <TextView android:enabled="false" android:id="@id/is_verified_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/is_verified_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="viewers_count" />
+        <TextView android:enabled="false" android:id="@id/viewers_count_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/viewers_count_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="has_location" />
+        <TextView android:enabled="false" android:id="@id/has_location_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/has_location_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="cortex_score" />
+        <TextView android:enabled="false" android:id="@id/cortex_score_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/cortex_score_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="report_ratio" />
+        <TextView android:enabled="false" android:id="@id/report_ratio_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/report_ratio_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="age_minutes" />
+        <TextView android:enabled="false" android:id="@id/age_measure" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+        <TextView android:enabled="false" android:id="@id/age_term" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="locales" />
+        <TextView android:enabled="false" android:id="@id/locales" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" android:="80.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="country" />
+        <TextView android:enabled="false" android:id="@id/country" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" android:="80.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="language" />
+        <TextView android:enabled="false" android:id="@id/language" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" android:="80.0dip" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:="8.0dip" android:="8.0dip">
+        <TextView android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="score" />
+        <TextView android:enabled="false" android:id="@id/score" android:layout_width="80.0dip" android:layout_height="wrap_content" android:="5.0dip" android:="5.0dip" android:="80.0dip" />
+    </LinearLayout>
+</LinearLayout>

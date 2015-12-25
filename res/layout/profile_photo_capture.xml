@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <SurfaceView android:id="@id/surface" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <o.apu android:id="@id/camera_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <o.aqs android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/take_photo_button" android:background="@drawable/bg_button_white" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:minWidth="158.0dip" android:minHeight="@dimen/btn_min_height" android:text="@string/take_photo" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:font="fonts/MuseoSans-300.otf" />
+    <o.arc android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/ic_close" android:tint="@color/white" style="@style/ToolbarBtn" />
+</RelativeLayout>

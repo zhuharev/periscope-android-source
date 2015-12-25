@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <o.ash android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+        <o.arm android:id="@id/list" android:background="@color/bg_users_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    </RelativeLayout>
+    <o.aqf android:id="@id/profile_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

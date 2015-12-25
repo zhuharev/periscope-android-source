@@ -1,0 +1,23 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package o;
+
+
+// Referenced classes of package o:
+//            xx
+
+public interface zz
+{
+
+    public abstract long J();
+
+    public abstract long K();
+
+    public abstract long L();
+
+    public abstract long getCurrentTimeMillis();
+
+    public abstract boolean _mth02CE(xx xx);
+}

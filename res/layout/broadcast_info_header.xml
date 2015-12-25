@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <View android:background="@color/light_grey_30" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/standard_spacing_16" />
+    <o.arp android:textColor="@color/light_grey" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_marginBottom="8.0dip" android:text="@string/no_viewers" android:="@dimen/indented_list_left_padding" android:font="fonts/MuseoSans-300.otf" />
+</LinearLayout>

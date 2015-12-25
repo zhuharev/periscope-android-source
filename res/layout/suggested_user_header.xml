@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/dark_blue" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="@dimen/indented_list_left_padding" android:="@dimen/standard_spacing_16" android:="@id/select_all" android:="true">
+        <o.arp android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/follow_people" android:font="fonts/MuseoSans-500.otf" style="@style/ToolbarTitle" />
+        <o.arp android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/suggested_user_header_description" android:layout_below="@id/title" android:font="fonts/MuseoSans-300.otf" />
+    </RelativeLayout>
+    <o.aqt android:id="@id/select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignBottom="@id/header" android:="8.0dip" android:="true" android:checked="@drawable/ic_check" android:unchecked="@drawable/ic_hollow_cirlce" android:checkedColorFilter="@color/white" android:uncheckedColorFilter="@color/border_light_blue" style="@style/IconButton" />
+</RelativeLayout>

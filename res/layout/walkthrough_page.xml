@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/activity_horizontal_margin" android:="@dimen/activity_horizontal_margin">
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="342.0dip" />
+        <o.arp android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/text" android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:font="fonts/MuseoSans-300.otf" />
+    </LinearLayout>
+</FrameLayout>

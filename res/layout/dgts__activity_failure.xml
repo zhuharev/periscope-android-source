@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tw__Permission_Container">
+        <com.digits.sdk.android.AccentImageView android:id="@id/dgts__header_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/dgts__login_header" android:scaleType="center" android:contentDescription="@string/dgts__image_header_description" />
+        <TextView android:gravity="center" android:id="@id/dgts__error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__confirmation_error" style="@style/tw__Permission_Title" />
+        <TextView android:gravity="center" android:id="@id/dgts__error_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dgts__permissions_margin_bottom" android:text="@string/dgts__confirmation_error_alternative" style="@style/tw__Permission_Description" />
+        <com.digits.sdk.android.AccentButton android:textSize="@dimen/tw__login_btn_text_size" android:id="@id/dgts__dismiss_button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dgts__permissions_margin_bottom" android:text="@string/dgts__dismiss" />
+        <com.digits.sdk.android.LinkTextView android:layout_gravity="center" android:id="@id/dgts__try_another_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dgts__try_another_phone" />
+    </LinearLayout>
+</ScrollView>

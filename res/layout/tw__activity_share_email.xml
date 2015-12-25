@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tw__Permission_Container">
+        <ImageView android:id="@id/imageView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/tw__share_email_header" android:scaleType="center" android:contentDescription="@string/tw__share_email_title" />
+        <TextView android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tw__share_email_title" style="@style/tw__Permission_Title" />
+        <TextView android:gravity="center" android:id="@id/tw__share_email_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tw__share_email_desc" style="@style/tw__Permission_Description" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/tw__ButtonBar">
+            <Button android:id="@id/tw__not_now_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tw__btn_bar_margin_left" android:layout_marginRight="@dimen/tw__btn_bar_margin_right" android:text="@string/tw__not_now_btn_txt" android:layout_weight="1.0" android:onClick="onClickNotNow" android:="@dimen/tw__btn_bar_margin_left" android:="@dimen/tw__btn_bar_margin_right" style="@style/tw__Button.Light" />
+            <Button android:id="@id/tw__allow_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tw__btn_bar_margin_left" android:layout_marginRight="@dimen/tw__btn_bar_margin_right" android:text="@string/tw__allow_btn_txt" android:layout_weight="1.0" android:onClick="onClickAllow" android:="@dimen/tw__btn_bar_margin_left" android:="@dimen/tw__btn_bar_margin_right" style="@style/tw__Button" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

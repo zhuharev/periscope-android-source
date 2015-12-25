@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/row_container" android:background="?android:selectableItemBackground" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arp android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/main_primary" android:id="@id/select_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_all" android:layout_centerVertical="true" android:borderTop="true" android:="@dimen/indented_list_left_padding" android:="true" android:font="fonts/MuseoSans-500.otf" />
+    <o.aqt android:id="@id/check" android:layout_centerVertical="true" android:="8.0dip" android:="8.0dip" android:="true" style="@style/IconButton" />
+</RelativeLayout>

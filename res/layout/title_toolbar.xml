@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:="true">
+        <o.arc android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:layout_centerVertical="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+        <o.arp android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:="@dimen/indented_list_left_padding" style="@style/ToolbarTitle" />
+    </RelativeLayout>
+    <o.arp android:textSize="12.0sp" android:textStyle="normal" android:gravity="top" android:id="@id/subtitle" android:paddingTop="2.0dip" android:paddingBottom="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/title_container" android:="@dimen/indented_list_left_padding" android:="32.0dip" android:="true" style="@style/ToolbarTitle" />
+</RelativeLayout>

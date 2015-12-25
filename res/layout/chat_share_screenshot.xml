@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="2.0dip" android:="10.0dip" android:="@dimen/standard_spacing_16"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/chat_twitter" />
+    <o.arp android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_share_screenshot_twitter" android:layout_centerVertical="true" android:="10.0dip" android:="@id/icon" android:font="fonts/MuseoSans-300.otf" />
+</RelativeLayout>

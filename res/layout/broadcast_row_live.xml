@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/broadcast_live_container" android:background="@color/broadcast_preview" android:layout_width="fill_parent" android:layout_height="216.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/image_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <ImageView android:layout_gravity="bottom" android:paddingTop="68.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/bg_card_live_overlay" android:scaleType="fitXY" />
+    <o.arp android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/live_label" android:background="@drawable/bg_live" android:padding="@dimen/label_padding" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="8.0dip" android:minWidth="40.0dip" android:text="@string/live" android:="8.0dip" android:font="fonts/MuseoSans-700.otf" />
+    <RelativeLayout android:layout_gravity="bottom" android:id="@id/info" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="9.0dip" android:="@dimen/standard_spacing_16">
+        <ImageView android:id="@id/avatar" android:background="@drawable/bg_hero_avatar_circle" android:padding="2.0dip" android:layout_width="@dimen/avatar_container_size" android:layout_height="@dimen/avatar_container_size" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:="21.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/details_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:="@id/extras_container" android:="@id/avatar">
+            <o.arp android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-300.otf" />
+            <o.arp android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:font="fonts/ProximaNova-Semibold.otf" />
+            <o.arp android:textSize="10.0sp" android:textColor="@color/white" android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:font="fonts/MuseoSans-500.otf" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/extras_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:="true">
+            <o.arc android:id="@id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_private_small" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/participant_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="@id/lock">
+                <o.arc android:layout_gravity="center_vertical" android:id="@id/participant_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_participants_small" android:scaleType="center" android:tint="@color/bg_white" />
+                <o.arp android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/participant_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="4.0dip" android:font="fonts/MuseoSans-700.otf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

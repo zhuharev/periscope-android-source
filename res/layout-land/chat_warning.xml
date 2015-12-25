@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/light_grey" android:paddingTop="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/dialog_content_padding" android:="@dimen/dialog_content_padding">
+        <o.arp android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialog_content_padding" android:text="@string/chat_warning_dialog_title" android:font="fonts/MuseoSans-300.otf" />
+    </LinearLayout>
+    <include android:layout_gravity="center_horizontal" android:id="@id/chat_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:="@dimen/dialog_content_padding" android:="@dimen/dialog_content_padding" layout="@layout/chat_row" />
+    <o.arp android:textSize="14.0sp" android:textColor="@color/light_grey" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_marginBottom="48.0dip" android:text="@string/chat_warning_dialog_message" android:="@dimen/dialog_content_padding" android:="@dimen/dialog_content_padding" android:font="fonts/MuseoSans-300.otf" />
+    <RelativeLayout android:paddingBottom="@dimen/dialog_content_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/dialog_content_padding" android:="@dimen/dialog_content_padding">
+        <o.aqs android:gravity="center" android:id="@id/negative" android:background="@drawable/bg_button_blue_hollow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_warning_dialog_btn_cancel" android:="true" style="@style/DialogButton" />
+        <o.aqs android:gravity="center" android:id="@id/positive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chat_warning_dialog_btn_send" android:="@dimen/dialog_btn_spacing" android:="@id/negative" style="@style/DialogButton" />
+    </RelativeLayout>
+</LinearLayout>

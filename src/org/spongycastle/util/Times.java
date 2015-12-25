@@ -1,0 +1,19 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package org.spongycastle.util;
+
+
+public final class Times
+{
+
+    public Times()
+    {
+    }
+
+    public static long nanoTime()
+    {
+        return System.nanoTime();
+    }
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arv android:id="@id/location_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" android:="3.0dip" />
+    <o.arc android:id="@id/location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location" android:alpha="0.3" android:="@dimen/location_icon_margin" android:toolTipOn="@string/broadcast_location_on" android:toolTipOff="@string/broadcast_location_off" style="@style/IconButton" />
+    <o.arc android:id="@id/following_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_followingchat" android:alpha="0.3" android:="8.0dip" android:="@id/location" android:toolTipOn="@string/broadcast_following_chat_on" android:toolTipOff="@string/broadcast_following_chat_off" style="@style/IconButton" />
+    <o.arc android:id="@id/tweet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_twitter" android:alpha="0.3" android:="8.0dip" android:="@id/following_chat" android:toolTipOn="@string/broadcast_twitter_post_on" android:toolTipOff="@string/broadcast_twitter_post_off" style="@style/IconButton" />
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="6.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Switch android:id="@id/local_api_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:text="Use local API" />
+    <EditText android:enabled="false" android:id="@id/api" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="http://172.28.45.249:8080" android:hint="Host:Port" android:singleLine="true" />
+    <Switch android:id="@id/canary_api_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:minHeight="?android:listPreferredItemHeight" android:text="Use canary API" />
+    <Switch android:id="@id/chatman_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="false" android:minHeight="?android:listPreferredItemHeight" android:text="ChatMan" />
+    <Switch android:id="@id/pubnub_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checked="true" android:minHeight="?android:listPreferredItemHeight" android:text="PubNub" />
+</LinearLayout>

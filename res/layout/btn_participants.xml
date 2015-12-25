@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/num_people_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_participants" android:scaleType="center" />
+    <o.arp android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/num_people_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="6.0dip" android:font="fonts/MuseoSans-700.otf" />
+</LinearLayout>

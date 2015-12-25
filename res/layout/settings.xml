@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.ash android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <o.arp android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/notifications_settings_header" style="@style/Preference.Header" />
+            <o.arl android:id="@id/pref_notif_sound" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notif_settings_sound" />
+            <o.aro android:id="@id/pref_notif_followed_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notif_settings_live" android:summaryOn="@string/notif_settings_on" android:summaryOff="@string/notif_settings_off" />
+            <o.aro android:id="@id/pref_notif_followed_shared" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notif_settings_shared" android:summaryOn="@string/notif_settings_on" android:summaryOff="@string/notif_settings_off" />
+            <o.aro android:id="@id/pref_notif_user_follows" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notif_settings_follows" android:summaryOn="@string/notif_settings_on" android:summaryOff="@string/notif_settings_off" />
+            <o.aro android:id="@id/pref_notif_suggested_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/notif_settings_suggested_first" android:summaryOn="@string/notif_settings_on" android:summaryOff="@string/notif_settings_off" />
+            <View android:background="@color/light_grey_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="32.0dip" />
+            <o.arp android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/other_settings_header" style="@style/Preference.Header" />
+            <o.ari android:id="@id/preferred_languages" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/preferred_languages" />
+            <o.aro android:id="@id/pref_autosave" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/autosave_settings" android:summaryOn="@string/autosave_settings_description" android:summaryOff="@string/autosave_settings_off" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

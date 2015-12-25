@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <o.aru android:id="@id/self_harm_web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="65.0dip" />
+    <View android:layout_gravity="bottom" android:id="@id/self_harm_divider" android:layout_marginBottom="64.0dip" style="@style/Divider" />
+    <o.aqs android:textSize="18.0sp" android:layout_gravity="bottom" android:id="@id/self_harm_button" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_margin="8.0dip" android:text="@android:string/ok" style="@style/Button" />
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|left|center" android:id="@id/ball_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ball_top_left" android:alpha="0.8" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/ball_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ball_top_right" android:alpha="0.8" />
+    <ImageView android:layout_gravity="bottom|left|center" android:id="@id/ball_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ball_bottom_left" android:alpha="0.8" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/ball_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ball_bottom_right" android:alpha="0.8" />
+</FrameLayout>

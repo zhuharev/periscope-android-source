@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_primary" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" style="@style/Toolbar"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arc android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:layout_centerVertical="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+    <o.aqw android:textSize="16.0sp" android:textColor="@color/white" android:textColorHint="@color/white" android:id="@id/search_query" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_people_hint" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionSearch" android:textCursorDrawable="@drawable/bg_cursor_white" android:="@dimen/indented_list_left_padding" android:="@id/close" android:="true" android:font="fonts/MuseoSans-300.otf">
+        <requestFocus />
+    </o.aqw>
+</RelativeLayout>

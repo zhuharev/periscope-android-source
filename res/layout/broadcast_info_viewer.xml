@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/broadcast_viewer_row_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <o.aqd android:id="@id/profile_image" android:layout_width="@dimen/avatar_size" android:layout_height="@dimen/avatar_size" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_centerVertical="true" android:="@dimen/standard_spacing_16" android:maskType="oval" />
+        <o.aix android:id="@id/baby_heart" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:="40.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_centerVertical="true" android:="@dimen/standard_spacing_16" android:="@id/profile_image">
+            <o.arp android:textSize="16.0sp" android:textColor="@color/dark_grey" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-500.otf" />
+            <o.arp android:textSize="14.0sp" android:textColor="@color/light_grey" android:id="@id/heart_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:font="fonts/MuseoSans-300.otf" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

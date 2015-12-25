@@ -1,0 +1,29 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package o;
+
+import java.io.Serializable;
+
+// Referenced classes of package o:
+//            wt, wu
+
+abstract class wz
+    implements wt, Serializable
+{
+
+    wz()
+    {
+    }
+
+    public String getName()
+    {
+        return null;
+    }
+
+    protected Object readResolve()
+    {
+        return wu._mth02E4(getName());
+    }
+}

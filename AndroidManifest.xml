@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="tv.periscope.android" platformBuildVersionCode="23" platformBuildVersionName="6.0-2166767">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:glEsVersion="0x20000" android:required="true"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="tv.periscope.android.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="tv.periscope.android.permission.C2D_MESSAGE"/>
+    <application android:="true" android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="o.xd" android:theme="@style/AppTheme">
+        <service android:exported="false" android:name="o.acf"/>
+        <meta-data android:name="LOCALYTICS_APP_KEY" android:value="2eb116f2dc0ddf5eb65c7a7-e87a2318-fdee-11e4-3f82-006918dcf667"/>
+        <activity android:configChanges="orientation" android:label="@string/app_name" android:launchMode="singleTask" android:name=".LaunchActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name=".AppRouterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.periscope.tv" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="periscope.tv" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="dev-m.periscope.tv" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="www.periscope.tv" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="periscope.tv" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="user" android:pathPrefix="/" android:scheme="pscp"/>
+                <data android:host="dev-m.periscope.tv" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="user" android:pathPrefix="/" android:scheme="pscpd"/>
+                <data android:host="broadcast" android:pathPrefix="/" android:scheme="pscp"/>
+                <data android:host="broadcast" android:pathPrefix="/" android:scheme="pscpd"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:name="o.alk" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.aky" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:bitmap="o.ajk" android:configChanges="orientation" android:name="o.aoa" android:screenOrientation="portrait"/>
+        <activity android:bitmap="o.ajk" android:configChanges="orientation" android:launchMode="singleTask" android:name="o.agp" android:theme="@style/AppTheme.Camera"/>
+        <activity android:configChanges="orientation" android:name="o.anb" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:name="o.alp" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:name="o.alu" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.acv" android:screenOrientation="portrait" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="orientation" android:name="o.aed" android:theme="@style/AppTheme.Camera" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:name="o.adb" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.act" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="o.ajk" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.amh" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.add" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.acu" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:name="o.acs" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.anj" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.alw" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.aly" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="o.afk" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="orientation" android:name="o.amk" android:screenOrientation="portrait"/>
+        <activity android:name="o.ph"/>
+        <activity android:name="o.amu"/>
+        <activity android:name="o.amt"/>
+        <activity android:name="o.amr"/>
+        <activity android:name="o.amy"/>
+        <activity android:name="o.amo"/>
+        <activity android:name="o.amv"/>
+        <activity android:name="o.amq"/>
+        <activity android:name="o.amw"/>
+        <receiver android:exported="false" android:name=".network.ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="tv.periscope.android"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.localytics.android.ReferralReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name=".push.PushListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name=".push.PushInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="o.aca"/>
+        <receiver android:exported="false" android:name="o.abz"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="4a8d618f8becfd095f7d2f40def64af141aaee41"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_geo_api_key"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:name="com.twitter.sdk.android.core.identity.OAuthActivity"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/tw__transparent" android:label="@string/kit_name" android:name="com.twitter.sdk.android.core.identity.ShareEmailActivity"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.PhoneNumberActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.ConfirmationCodeActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.LoginCodeActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.PinCodeActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.FailureActivity" android:taskAffinity="com.digits.sdk.android"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.ContactsActivity"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.PhoneNumberActionBarActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.ConfirmationCodeActionBarActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.LoginCodeActionBarActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.FailureActionBarActivity" android:taskAffinity="com.digits.sdk.android"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.ContactsActionBarActivity"/>
+        <activity android:configChanges="orientation" android:exported="false" android:name="com.digits.sdk.android.PinCodeActionBarActivity" android:taskAffinity="com.digits.sdk.android" android:windowSoftInputMode="stateVisible"/>
+        <service android:enabled="true" android:exported="false" android:name="com.digits.sdk.android.ContactsUploadService"/>
+    </application>
+</manifest>

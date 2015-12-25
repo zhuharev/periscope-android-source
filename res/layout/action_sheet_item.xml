@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.aqd android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:minWidth="40.0dip" android:minHeight="40.0dip" android:layout_centerVertical="true" android:="16.0dip" android:="16.0dip" android:maskType="oval" />
+    <o.arp android:textSize="16.0sp" android:textColor="@color/dark_grey" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:="@id/icon" android:font="fonts/MuseoSans-500.otf" />
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="64.0dip" android:layout_centerVertical="true" android:="true">
+        <o.arc android:layout_gravity="center" android:id="@id/comment_send_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_send" android:scaleType="center" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" android:tint="@color/bg_action_bar_pressable" />
+        <ImageView android:layout_gravity="center" android:id="@id/cross" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close" android:scaleType="center" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/chat_status_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.0dip" android:="@id/button_container">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <o.arp android:textSize="16.0sp" android:textColor="@color/white_low_alpha" android:gravity="bottom|left|center" android:id="@id/chat_status" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip" android:font="fonts/MuseoSans-300.otf" />
+            <View android:id="@id/input_line" android:background="@color/white_low_alpha" android:visibility="gone" android:layout_width="150.0dip" android:layout_height="@dimen/divider_height" android:layout_below="@id/chat_status" android:="4.0dip" />
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/compose_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:="@id/button_container" android:="true">
+        <o.aqd android:id="@id/avatar" android:layout_width="@dimen/chat_avatar_size" android:layout_height="fill_parent" android:scaleType="centerCrop" android:minHeight="@dimen/chat_avatar_size" />
+        <o.aqw android:textSize="16.0sp" android:textColor="@color/dark_grey" android:textColorHint="@color/light_grey" android:gravity="left|center" android:id="@id/compose_comment" android:background="@drawable/bg_chat" android:padding="8.0dip" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="35.0dip" android:hint="@string/comment_hint" android:font="fonts/MuseoSans-300.otf" />
+    </LinearLayout>
+</merge>

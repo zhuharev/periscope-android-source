@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arc android:layout_gravity="center_vertical" android:id="@id/participant_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_participants_small" android:scaleType="center" android:tint="@color/bg_feed_icon" />
+    <o.arp android:textSize="14.0sp" android:textColor="@color/light_grey" android:id="@id/participant_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="@dimen/small_icon_padding" android:font="fonts/MuseoSans-700.otf" />
+</merge>

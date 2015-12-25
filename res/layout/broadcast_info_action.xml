@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arc android:id="@id/more" android:background="?iconSelectorBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more" android:layout_centerVertical="true" android:="8.0dip" android:="true" android:tint="@color/bg_blue" style="@style/IconButton" />
+    <o.apm android:id="@id/default_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:="@id/more" android:="true" android:labelTextSize="14.0sp" android:labelFont="fonts/MuseoSans-700.otf" />
+</RelativeLayout>

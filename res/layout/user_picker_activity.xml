@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/bg_users_list" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/header" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <o.arc android:id="@id/close_or_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/ic_close" android:tint="@color/bg_blue" style="@style/ToolbarBtn" />
+        <FrameLayout android:id="@id/title_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:="@dimen/indented_list_left_padding" android:="@dimen/standard_spacing_16" android:="true">
+            <o.arp android:textColor="@color/dark_grey" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ToolbarTitle" />
+            <o.aqw android:textColor="@color/dark_grey" android:textColorHint="@color/light_grey" android:id="@id/search_query" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/search_people_hint" android:inputType="text" android:imeOptions="actionSearch" style="@style/ToolbarTitle" />
+        </FrameLayout>
+        <o.arp android:textSize="12.0sp" android:textColor="@color/light_grey" android:id="@id/description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="@dimen/standard_spacing_16" android:layout_below="@id/title_container" android:="@dimen/indented_list_left_padding" android:="@dimen/standard_spacing_16" android:="@id/search_or_close" android:="true" android:font="fonts/MuseoSans-300.otf" />
+        <o.arc android:id="@id/search_or_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/abc_ic_search_api_mtrl_alpha" android:layout_alignParentTop="true" android:="true" android:tint="@color/bg_blue" style="@style/ToolbarBtn" />
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/light_grey_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/header" />
+    <o.arm android:id="@id/list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/done_count" android:layout_below="@id/divider" />
+    <o.aqs android:textSize="16.0sp" android:id="@id/done_count" android:background="@color/main_primary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_alignParentBottom="true" android:font="fonts/MuseoSans-500.otf" style="@style/Button" />
+</RelativeLayout>

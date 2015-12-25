@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/control_hints" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <o.arp android:textSize="18.0sp" android:textColor="@color/white_alpha_half" android:id="@id/seek_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:text="@string/replay_scrub_hint_seek" android:drawablePadding="10.0dip" android:layout_centerHorizontal="true" android:maxItems="@drawable/graphic_seek_arrows" android:font="fonts/MuseoSans-300.otf" />
+        <o.arp android:textSize="18.0sp" android:textColor="@color/white_alpha_half" android:id="@id/zoom_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/replay_scrub_hint_fine_control" android:drawablePadding="10.0dip" android:layout_below="@id/seek_hint" android:layout_centerHorizontal="true" android:maxItems="@drawable/graphic_zoom_arrow" android:font="fonts/MuseoSans-300.otf" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/zoom_zone" android:layout_width="fill_parent" android:layout_height="@dimen/replay_scrub_margin_bottom" android:layout_alignParentBottom="true">
+        <o.arp android:textSize="10.0sp" android:textColor="@color/white_alpha_half" android:layout_gravity="center_horizontal" android:id="@id/zoom_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:font="fonts/MuseoSans-500.otf" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/zoom_zone">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/thumb_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip">
+            <o.aqd android:layout_gravity="center" android:id="@id/thumb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" style="@style/ReplayThumb" />
+        </FrameLayout>
+        <o.arp android:textSize="18.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:font="fonts/MuseoSans-300.otf" />
+        <o.asa android:id="@id/bar" android:layout_width="fill_parent" android:layout_height="10.0dip" android:indeterminateOnly="false" android:progressDrawable="@drawable/time_bar" android:barHeight="4.0dip" android:dotMargin="4.5dip" android:dotRadius="1.5dip" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<o.arx android:id="@id/root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/playback_controls" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/playback_control_size" android:="16.0dip" android:="16.0dip">
+        <o.arc android:id="@id/btn_cameraflip" android:background="@drawable/bg_toolbar_btn" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:src="@drawable/ic_cameraflip" android:scaleType="center" android:layout_centerVertical="true" android:="true" />
+        <o.aqs android:id="@id/btn_stop_broadcast" android:background="@drawable/bg_button_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_stop_broadcast" android:layout_centerVertical="true" android:="12.0dip" android:="@id/btn_cameraflip" style="@style/Button.Medium.Raised" />
+    </RelativeLayout>
+    <o.aeu android:id="@id/drag_child" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false">
+        <o.aav android:id="@id/camera_playback" android:layout_width="fill_parent" android:layout_height="fill_parent" android:soundEffectsEnabled="false" />
+        <View android:layout_gravity="top" android:background="@drawable/bg_gradient_down_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/text_protection_scrim_height" />
+        <View android:layout_gravity="bottom" android:background="@drawable/bg_gradient_up_overlay" android:layout_width="fill_parent" android:layout_height="@dimen/text_protection_scrim_height" />
+        <RelativeLayout android:id="@id/gesture_hints" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+            <o.arp android:textColor="@color/white" android:id="@id/swipe_down_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:font="fonts/MuseoSans-300.otf" />
+            <o.arp android:textColor="@color/white" android:id="@id/double_tap_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/swipe_down_label" android:layout_centerHorizontal="true" android:font="fonts/MuseoSans-300.otf" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/drawer_caret" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_broadcaster_drawer" android:scaleType="center" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" />
+    </o.aeu>
+    <LinearLayout android:orientation="vertical" android:id="@id/stream_details" android:background="#b2000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <o.arc android:id="@id/btn_close" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:src="@drawable/ic_close" android:scaleType="center" android:layout_centerVertical="true" android:="true" style="@style/ToolbarBtn" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/public_private_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/standard_spacing_16">
+                <o.arn android:textSize="16.0sp" android:textColor="@color/text_activated" android:id="@id/public_text" android:paddingTop="13.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/broadcast_public" android:borderTop="true" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:indicatorSize="2.0dip" android:indicatorColor="@color/white" android:font="fonts/MuseoSans-700.otf" />
+                <o.arn android:textSize="16.0sp" android:textColor="@color/text_activated" android:id="@id/lock" android:paddingTop="13.0dip" android:paddingBottom="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/broadcast_private" android:borderTop="true" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:indicatorSize="2.0dip" android:indicatorColor="@color/white" android:font="fonts/MuseoSans-700.otf" />
+            </LinearLayout>
+            <o.arp android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/dev" android:background="@drawable/bg_live" android:padding="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="DEV" android:layout_centerVertical="true" android:="@id/public_private_container" android:font="fonts/MuseoSans-700.otf" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:="32.0dip" android:="32.0dip">
+            <o.aqw android:textSize="24.0sp" android:textColor="#ffdedede" android:textColorHint="#ff555555" android:id="@id/edit_broadcast_title" android:background="@drawable/input_white" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="4.0dip" android:hint="@string/broadcast_title_hint" android:textCursorDrawable="@drawable/bg_cursor_white" android:font="fonts/ProximaNova-Light.otf" />
+            <include layout="@layout/pre_broadcast" />
+        </LinearLayout>
+        <o.aqs android:enabled="false" android:textSize="16.0sp" android:id="@id/btn_start_broadcast" android:background="@drawable/bg_button_live" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="@dimen/activity_vertical_margin" android:minHeight="50.0dip" android:text="@string/btn_start_broadcast" android:="32.0dip" android:="32.0dip" android:font="fonts/MuseoSans-500.otf" style="@style/Button.Medium.Raised" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <o.aib android:id="@id/hearts_view" android:layout_width="@dimen/heart_container_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/hearts_bottom_padding" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" android:="true" style="@style/HeartContainer" />
+        <o.ahw android:id="@id/chats_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/standard_spacing_16" android:layout_alignWithParentIfMissing="true" android:="@id/hearts_view" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom|right|center" android:id="@id/participants" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/btn_participants" />
+    <o.adu android:id="@id/bottom_drag_child" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <o.aqf android:id="@id/profile_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <o.ans android:id="@id/user_picker_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <o.apk android:id="@id/action_sheet" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</o.arx>

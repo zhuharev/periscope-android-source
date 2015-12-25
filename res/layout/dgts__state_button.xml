@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/dgts__state_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/dgts__ButtonText" />
+    <ProgressBar android:id="@id/dgts__state_progress" android:layout_width="@dimen/dgts__progress_bar_side_length" android:layout_height="@dimen/dgts__progress_bar_side_length" android:layout_marginLeft="@dimen/tw__login_btn_left_padding" android:layout_marginRight="@dimen/tw__login_btn_left_padding" android:layout_toLeftOf="@id/dgts__state_button" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+    <ImageView android:id="@id/dgts__state_success" android:layout_width="@dimen/dgts__progress_bar_side_length" android:layout_height="@dimen/dgts__progress_bar_side_length" android:src="@drawable/dgts__ic_success" android:layout_toLeftOf="@id/dgts__state_button" android:layout_centerInParent="true" android:contentDescription="@string/dgts__success_desc" />
+</merge>

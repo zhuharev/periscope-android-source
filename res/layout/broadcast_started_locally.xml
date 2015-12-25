@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.arp android:textSize="@dimen/abc_text_size_body_2_material" android:textColor="@color/white" android:id="@id/broadcast_live_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/broadcast_live_label" android:font="fonts/MuseoSans-300.otf" />
+    <o.arp android:textSize="@dimen/abc_text_size_headline_material" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/broadcasting_live" android:drawablePadding="8.0dip" android:layout_below="@id/broadcast_live_label" android:tabLayout="@drawable/ic_live_audio" android:font="fonts/MuseoSans-700.otf" />
+</RelativeLayout>

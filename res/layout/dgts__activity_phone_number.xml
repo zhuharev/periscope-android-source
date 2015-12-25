@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:digits="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/dgts__Container">
+        <com.digits.sdk.android.LogoImageView android:layout_gravity="center_horizontal" android:id="@id/dgts__logo" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="wrap_content" android:adjustViewBounds="true" style="@style/dgts__HeaderMargin" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__phone_number_text" style="@style/dgts__Title" />
+        <com.digits.sdk.android.CountryListSpinner android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/dgts__countryCode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dgts__country_code_margin_bottom" />
+        <EditText android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/dgts__phoneNumberEditText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dgts__margin_bottom" android:hint="@string/dgts__phone_number_edit_hint" android:inputType="phone" android:imeOptions="actionNext" />
+        <com.digits.sdk.android.StateButton android:id="@id/dgts__sendCodeButton" android:layout_width="fill_parent" android:layout_height="@dimen/tw__login_btn_height" android:layout_marginBottom="@dimen/dgts__margin_bottom" android:finishStateText="@string/dgts__confirmation_sent_text" android:progressStateText="@string/dgts__confirmation_sending_text" android:startStateText="@string/dgts__confirmation_send_text" />
+        <TextView android:id="@id/dgts__termsText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dgts__terms_text" style="@style/dgts__Terms" />
+    </LinearLayout>
+</ScrollView>

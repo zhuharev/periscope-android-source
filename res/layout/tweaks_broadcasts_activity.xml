@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <o.ash android:id="@id/action_bar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+        <o.ﹹ android:id="@id/swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <o.arm android:id="@id/list_view" android:background="@color/dark_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </o.ﹹ>
+    </LinearLayout>
+    <o.aqf android:id="@id/profile_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

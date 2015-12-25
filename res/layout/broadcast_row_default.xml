@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/broadcast_row_container" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.ail android:id="@id/thumb" android:layout_width="@dimen/broadcast_row_width" android:layout_height="fill_parent" android:scaleType="centerCrop" android:="4.0dip" />
+    <RelativeLayout android:id="@id/details_container" android:paddingTop="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <o.arp android:id="@id/author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:="@dimen/standard_spacing_16" android:="@id/extras_container" android:="true" style="@style/Author" />
+        <o.arp android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_below="@id/author" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:="@id/lock" android:="true" style="@style/Title" />
+        <o.arp android:textSize="10.0sp" android:textColor="@color/light_grey" android:ellipsize="end" android:id="@id/location_or_social_proof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" android:layout_below="@id/title" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:="@id/info_icon" android:font="fonts/MuseoSans-500.otf" />
+        <ImageView android:id="@id/info_icon" android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-13.0dip" android:src="@drawable/ic_info" android:scaleType="center" android:layout_below="@id/title" android:layout_alignParentBottom="true" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:="true" />
+        <FrameLayout android:id="@id/extras_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/author" android:="@dimen/standard_spacing_16" android:="true">
+            <LinearLayout android:orientation="horizontal" android:id="@id/participant_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/participant" />
+            </LinearLayout>
+            <o.arp android:textSize="14.0sp" android:textColor="@color/light_grey" android:id="@id/timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-700.otf" />
+            <o.aqx android:id="@id/featured_label" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/featured" android:font="fonts/MuseoSans-700.otf" />
+        </FrameLayout>
+        <o.arc android:id="@id/lock" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_private_small" android:layout_below="@id/extras_container" android:layout_alignTop="@id/title" android:="@dimen/standard_spacing_16" android:="true" android:tint="@color/bg_feed_icon" />
+    </RelativeLayout>
+</LinearLayout>

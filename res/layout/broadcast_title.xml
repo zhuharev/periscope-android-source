@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/bg_gradient_up_overlay" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/text_protection_scrim_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="bottom" android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/standard_spacing_16" android:="72.0dip">
+        <o.arp android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/broadcast_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:font="fonts/ProximaNova-Light.otf" />
+        <o.arp android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/broadcast_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/broadcast_title" android:font="fonts/MuseoSans-500.otf" />
+    </RelativeLayout>
+</FrameLayout>

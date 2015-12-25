@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<o.akm android:id="@id/swipe_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <o.aks android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_gravity="center" android:id="@id/content_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/content_loading" />
+    </o.aks>
+</o.akm>

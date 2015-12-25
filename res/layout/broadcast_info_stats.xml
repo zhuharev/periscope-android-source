@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="1.0">
+        <include android:id="@id/stat_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" layout="@layout/stat" />
+        <include android:id="@id/stat_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" layout="@layout/stat" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:baselineAligned="false" android:weightSum="1.0">
+        <include android:id="@id/stat_3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" layout="@layout/stat" />
+        <include android:id="@id/stat_4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5" layout="@layout/stat" />
+    </LinearLayout>
+</LinearLayout>

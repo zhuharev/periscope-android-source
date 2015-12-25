@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<o.arx android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/toolbar" android:background="@color/main_primary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:actionBarSize" style="@style/Toolbar">
+            <o.arz android:orientation="horizontal" android:id="@id/toolbar_layout" android:layout_width="wrap_content" android:layout_height="?android:actionBarSize" android:scrollerSize="2.0dip">
+                <o.akt android:layout_gravity="center" android:id="@id/btn_watch" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:tint="@color/main_toolbar_btn_inactive" android:src="@drawable/ic_watch" />
+                <o.akt android:layout_gravity="center" android:id="@id/btn_world_map" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:tint="@color/main_toolbar_btn_inactive" android:src="@drawable/ic_world" />
+                <o.akt android:layout_gravity="center" android:id="@id/btn_world_list" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:tint="@color/main_toolbar_btn_inactive" android:src="@drawable/ic_list" />
+                <o.akt android:layout_gravity="center" android:id="@id/btn_people" android:layout_width="@dimen/toolbar_btn_width" android:layout_height="@dimen/toolbar_btn_height" android:tint="@color/main_toolbar_btn_inactive" android:src="@drawable/ic_people" />
+            </o.arz>
+            <ImageView android:layout_gravity="right|center" android:id="@id/btn_peekaboo" android:visibility="invisible" android:layout_width="56.0dip" android:layout_height="48.0dip" android:src="@drawable/ic_profile" android:scaleType="center" style="@style/ToolbarBtn" />
+        </FrameLayout>
+        <o.akd android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/toolbar" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="bottom|right|center" android:id="@id/btn_float_action" android:background="@drawable/bg_float_action_btn_broadcast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip" android:="16.0dip" style="@style/FloatingActionButton">
+        <ImageView android:layout_gravity="center" android:id="@id/float_action_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_broadcast" android:scaleType="center" />
+    </FrameLayout>
+    <o.apq android:id="@id/bottom_sheet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="39.999996%" android:margin="4.0dip" />
+    <o.aqf android:id="@id/profile_sheet" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</o.arx>

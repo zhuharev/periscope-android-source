@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/profile_info" android:layout_width="fill_parent" android:layout_height="172.0dip" style="@style/Elevated">
+        <ImageView android:id="@id/profile_back" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+        <View android:id="@id/profile_overlay" android:background="@color/dark_blue_alpha" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/profile_image_container" android:layout_width="@dimen/profile_activity_image_container_size" android:layout_height="@dimen/profile_activity_image_container_size" android:layout_marginTop="@dimen/standard_spacing_16">
+                <o.aqd android:layout_gravity="center_horizontal" android:id="@id/profile_image" android:layout_width="@dimen/profile_activity_image_size" android:layout_height="@dimen/profile_activity_image_size" android:scaleType="centerCrop" android:maskType="oval" />
+                <ImageView android:id="@id/profile_image_border" android:background="@drawable/bg_profile_avatar_circle" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <o.arp android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/profile_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:font="fonts/MuseoSans-500.otf" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/username_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip">
+                <o.arp android:textSize="12.0sp" android:textColor="@color/white_alpha_half" android:id="@id/username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-500.otf" />
+                <ImageView android:id="@id/verified" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_verified" android:="4.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_heart_profile" android:="5.0dip" />
+                <o.arp android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/heart_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:font="fonts/MuseoSans-700.otf" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" android:layout_alignParentTop="true">
+            <o.arc android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:layout_centerVertical="true" android:="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+            <o.arc android:id="@id/edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:src="@drawable/ic_edit" android:layout_alignParentTop="true" android:="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <o.ard android:textColor="@color/light_grey" android:id="@id/description" android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_marginBottom="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:="@dimen/standard_spacing_16" android:font="fonts/MuseoSans-300.otf" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/following_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/standard_spacing_16" style="@style/ProfileItem">
+                <o.arp android:layout_gravity="center_vertical" android:id="@id/following" android:background="@drawable/bg_following_label" android:layout_height="wrap_content" style="@style/NumberLabel" />
+                <o.arp android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/following" android:="@dimen/activity_horizontal_margin" android:font="fonts/MuseoSans-500.otf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/follower_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileItem">
+                <o.arp android:layout_gravity="center_vertical" android:id="@id/followers" android:background="@drawable/bg_followers_label" android:layout_height="wrap_content" style="@style/NumberLabel" />
+                <o.arp android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/followers" android:="@dimen/activity_horizontal_margin" android:font="fonts/MuseoSans-500.otf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/blocked_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileItem">
+                <o.arp android:layout_gravity="center_vertical" android:id="@id/blocked" android:background="@drawable/bg_blocked_label" android:layout_height="wrap_content" style="@style/NumberLabel" />
+                <o.arp android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blocked" android:="@dimen/activity_horizontal_margin" android:font="fonts/MuseoSans-500.otf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/broadcasts_container" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileItem">
+                <o.arp android:layout_gravity="center_vertical" android:id="@id/broadcasts" android:background="@drawable/bg_broadcasts_label" android:layout_height="wrap_content" style="@style/NumberLabel" />
+                <o.arp android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_item_broadcasts" android:="@dimen/activity_horizontal_margin" android:font="fonts/MuseoSans-500.otf" />
+            </LinearLayout>
+            <View android:background="@color/divider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/standard_spacing_16" android:layout_marginBottom="@dimen/standard_spacing_16" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/settings" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ProfileItem">
+                <ImageView android:id="@id/settings_icon" android:layout_width="40.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_settings" android:scaleType="center" />
+                <o.arp android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings" android:="@dimen/activity_horizontal_margin" android:font="fonts/MuseoSans-500.otf" />
+            </LinearLayout>
+            <o.arp android:id="@id/help_center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/help_center" style="@style/ProfileItem.Indented" />
+            <o.arp android:id="@id/send_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send_feedback" style="@style/ProfileItem.Indented" />
+            <o.arp android:id="@id/debug" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Tweaks" style="@style/ProfileItem.Indented" />
+            <o.arp android:id="@id/legal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/legal" style="@style/ProfileItem.Indented" />
+            <o.arp android:id="@id/logout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/logout" style="@style/ProfileItem.Indented" />
+            <o.arp android:textSize="8.0sp" android:textColor="@color/light_grey" android:gravity="center" android:id="@id/version_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:font="fonts/MuseoSans-500.otf" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

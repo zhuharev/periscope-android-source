@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <o.ash android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <o.arl android:id="@id/hearts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_test_hearts" />
+            <o.arl android:id="@id/chats" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_test_chats" />
+            <o.arl android:gravity="center_vertical" android:id="@id/api" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_api" />
+            <o.arl android:gravity="center_vertical" android:id="@id/rank_broadcasts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_rank_broadcasts" />
+            <o.aro android:id="@id/channel_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_channel_info" android:summaryOn="@string/debug_channel_info_on" android:summaryOff="@string/debug_channel_info_off" />
+            <o.aro android:id="@id/force_hls" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_force_hls" android:summaryOn="@string/debug_force_hls_on" android:summaryOff="@string/debug_force_hls_off" />
+            <o.aro android:id="@id/show_block_counts" android:layout_width="fill_parent" android:layout_height="wrap_content" android:title="@string/debug_block_counts" android:summaryOn="@string/debug_block_counts_on" android:summaryOff="@string/debug_block_counts_off" />
+            <o.arp android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/debug_info_header" style="@style/Preference.Header" />
+            <o.arp android:id="@id/info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:font="fonts/MuseoSans-300.otf" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

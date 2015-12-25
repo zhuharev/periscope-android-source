@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/toolbar" android:background="@color/main_primary" android:layout_width="fill_parent" android:layout_height="?android:actionBarSize">
+        <o.arc android:id="@id/back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_back" android:layout_centerVertical="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+        <o.arc android:id="@id/send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_send" android:layout_centerVertical="true" android:="true" android:tint="@color/bg_action_bar_pressable" style="@style/ToolbarBtn" />
+        <o.arp android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feedback_title" android:layout_centerVertical="true" android:="@dimen/indented_list_left_padding" android:="true" style="@style/ToolbarTitle" />
+    </RelativeLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/activity_vertical_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:="@dimen/activity_horizontal_margin" android:="@dimen/activity_horizontal_margin">
+            <EditText android:id="@id/summary" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/feedback_summary_hint" android:maxLines="4" android:scrollHorizontally="false" android:inputType="textCapSentences|textMultiLine" />
+            <EditText android:gravity="top" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="@dimen/standard_spacing_16" android:scrollHorizontally="false" android:layout_weight="1.0" android:inputType="textCapSentences|textMultiLine" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

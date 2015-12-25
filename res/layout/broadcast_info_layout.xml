@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/broadcast_title" />
+    <android.support.v7.widget.RecyclerView android:id="@id/list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <o.arc android:id="@id/btn_play" android:background="@drawable/bg_material_play_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play" android:scaleType="center" android:minWidth="@dimen/min_touch_target_size" android:minHeight="@dimen/min_touch_target_size" style="@style/Elevated" />
+</merge>

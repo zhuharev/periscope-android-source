@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="invited_num_followers">
+        <item quantity="other">%1$s пригласил(а) %2$s человек</item>
+        <item quantity="one">%1$s пригласил(а) %2$s человека</item>
+    </plurals>
+    <plurals name="invited_num_followers_embolden">
+        <item quantity="other">*%1$s* пригласил(а) %2$s человек</item>
+        <item quantity="one">*%1$s* пригласил(а) %2$s человека</item>
+    </plurals>
+    <plurals name="num_live_viewers">
+        <item quantity="other">Зрителей в прямом эфире: %s</item>
+        <item quantity="one">Зрителей в прямом эфире: %s</item>
+    </plurals>
+    <plurals name="num_replay_viewers">
+        <item quantity="other">Зрителей записи: %s</item>
+        <item quantity="one">Зрителей записи: %s</item>
+    </plurals>
+    <plurals name="recents">
+        <item quantity="other">Недавние: %s</item>
+        <item quantity="one">Недавние: %s</item>
+    </plurals>
+</resources>

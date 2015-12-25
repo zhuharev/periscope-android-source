@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<o.arp android:textSize="16.0sp" android:textColor="@color/dark_grey" android:gravity="center_vertical" android:id="@android:id/text1" android:paddingTop="@dimen/standard_spacing_16" android:paddingBottom="@dimen/standard_spacing_16" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listLayout" android:layout_centerVertical="true" android:="24.0dip" android:="24.0dip" android:="@id/icon" android:font="fonts/MuseoSans-500.otf"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" />
